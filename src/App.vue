@@ -2,6 +2,7 @@
   <div id="app">
     <!-- use component -->
     <Header/>
+    <Main />
   </div>
 </template>
 
@@ -9,12 +10,15 @@
 
 // imported component Header
 import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
+
 
 export default {
   name: 'App',
   components: {
     //declared component
-    Header
+    Header,
+    Main
   }
 }
 </script>
