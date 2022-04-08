@@ -1,7 +1,7 @@
 <template>
-  <div>
-
-  </div>
+  <header >
+    <img src="../assets/img/spotify-logo.png" alt="logo spotify">
+  </header>
 </template>
 
 <script>
@@ -10,6 +10,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+header{
+  background-color: hsl(210deg 21% 23%);
+  min-height: 50px;
+  img {
+    width: 40px;
+    margin: 10px 20px;
+  }
+}
+
 
 </style>
