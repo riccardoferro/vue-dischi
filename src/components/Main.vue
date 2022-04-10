@@ -1,10 +1,15 @@
 <template>
     <main>
-        <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-6 col-xl-3">
-                <SingleAlbum />
-              </div>
+        <div class="container pb-5 pt-5 d-flex justify-content-center">
+            <div >
+                <div v-if="albums.length > 0 " class="row justify-content-between w-75 m-auto">
+                  <SingleAlbum  
+                  v-for="(item,index) in albums" 
+                  :key="index"   
+                  :album = "item" 
+                  class="col-12 col-md-3 col-xl-2 "/>
+                </div>
+                
             </div>
         </div>
     </main>
@@ -41,7 +46,8 @@ export default {
         (response)=> {
           // if response good
           if (response.status === 200) {
-              this.albums = response.data
+              console.log(response)
+              this.albums = response.data.response
               console.log(this.albums)
           }
         }
@@ -56,8 +62,5 @@ export default {
 <style lang="scss" scoped>
   main {
     background-color: hsl(209deg 33% 17%);
-    height: 90vh;
   }
-  
-
 </style>
