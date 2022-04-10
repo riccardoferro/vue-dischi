@@ -1,7 +1,7 @@
 <template>
     <div class="card-rf me-1" >
         <img :src="album.poster" :alt="album.title" class="img-fluid pb-4">
-        <h5>{{album.title}}</h5>
+        <h6>{{album.title}}</h6>
         <span>{{album.author}}</span>
         <span class="d-block">{{album.year}}</span>
     </div>
@@ -31,9 +31,9 @@ year: "1988"
 .card-rf {
   text-align: center;
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: hsl(210deg 21% 23%);
-  h5 {
+  h6 {
     text-transform: uppercase;
     color: white;
   }

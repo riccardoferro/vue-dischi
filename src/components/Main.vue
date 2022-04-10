@@ -9,7 +9,9 @@
                   :album = "item" 
                   class="col-12 col-md-3 col-xl-2 "/>
                 </div>
-                
+                <div v-else class="load" >
+                    <LoadingComponent />
+                </div>
             </div>
         </div>
     </main>
@@ -19,6 +21,8 @@
 // import library axios
 import axios from 'axios';
 import SingleAlbum from "@/components/subcomponents/SingleAlbum.vue"
+import LoadingComponent from "@/components/subcomponents/LoadingComponent.vue"
+
 
 export default {
   name: "ComponentMain",
@@ -33,7 +37,8 @@ export default {
     url: String
   },
   components: {
-    SingleAlbum
+    SingleAlbum,
+    LoadingComponent
   },
   // when the software si ready go with this first function
   mounted() {
@@ -62,5 +67,8 @@ export default {
 <style lang="scss" scoped>
   main {
     background-color: hsl(209deg 33% 17%);
+    .load {
+      height: 90vh;
+    }
   }
 </style>
