@@ -1,11 +1,19 @@
 <template>
     <main>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <SingleAlbum />
+              </div>
+            </div>
+        </div>
     </main>
 </template>
 
 <script>
 // import library axios
 import axios from 'axios';
+import SingleAlbum from "@/components/subcomponents/SingleAlbum.vue"
 
 export default {
   name: "ComponentMain",
@@ -18,6 +26,9 @@ export default {
   //here we gonna take the url API
   props: {
     url: String
+  },
+  components: {
+    SingleAlbum
   },
   // when the software si ready go with this first function
   mounted() {
