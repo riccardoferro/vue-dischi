@@ -34,7 +34,9 @@ export default {
               console.log(this.albums)
           }
         }
-      )
+      ).catch((error)=>{
+        console.log(error);
+      })
     }
   }
 }
@@ -46,4 +48,5 @@ export default {
     height: 90vh;
   }
   
+
 </style>
