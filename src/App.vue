@@ -29,6 +29,8 @@ export default {
 
 <style lang="scss">
 
+@import "~bootstrap/scss/bootstrap";
+
 * {
   box-sizing: border-box;
   padding: 0;
