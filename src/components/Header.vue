@@ -14,7 +14,6 @@ export default {
 
 header{
   background-color: hsl(210deg 21% 23%);
-  height: 10vh;
   img {
     width: 50px;
     margin: 10px 20px;

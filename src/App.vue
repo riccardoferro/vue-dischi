@@ -36,5 +36,9 @@ export default {
   padding: 0;
   margin: 0;
 }
+body {
+      background-color: hsl(209deg 33% 17%);
+
+}
 
 </style>
