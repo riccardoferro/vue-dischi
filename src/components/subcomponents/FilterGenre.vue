@@ -25,10 +25,10 @@ export default {
       selectedGenre: ""
     }
   },
-  
+
   // methods
   methods: {
-    // this method with emit send the value of the var selectedGenre to the father components who is waiting
+    // this method with emit send the value of the current var selectedGenre to the father components who is waiting
     changeGenre(){
       console.log(this.selectedGenre);
       this.$emit('changedGenre',this.selectedGenre);
