@@ -2,6 +2,7 @@
   <div id="app">
     <!-- use component -->
     <Header/>
+    <!-- here we call the component main and send him the api's url -->
     <Main :url="apiUrl"/>
   </div>
 </template>
@@ -29,8 +30,10 @@ export default {
 
 <style lang="scss">
 
+// import bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+// general settings
 * {
   box-sizing: border-box;
   padding: 0;
@@ -38,7 +41,6 @@ export default {
 }
 body {
       background-color: hsl(209deg 33% 17%);
-
 }
 
 </style>
